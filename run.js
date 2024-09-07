@@ -1,7 +1,7 @@
 const fs = require('fs')
 
 ;(async ()=>{
-    let json = await (await fetch("http://irmapserver.ir/research/api/weather/")).json()
+    let json = await (await fetch("http://cdn.ituring.ir/research/api/weather/")).json()
 
     //fs.writeFileSync("./w.json",JSON.stringify(json,null,2))
     

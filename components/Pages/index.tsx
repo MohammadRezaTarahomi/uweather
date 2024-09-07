@@ -20,7 +20,7 @@ const Page: PageEl = (props, state, refresh, getProps) => {
       <br-x />
       <Window title={name} 
       style={{ minHeight: 200, margin: 10, width: "calc(100% - 20px)", 
-        backgroundImage:'url("https://irmapserver.ir/research/51/bg2.webp")',
+        backgroundImage:'url("https://cdn.ituring.ir/research/51/bg2.webp")',
         backgroundSize:"cover"
       }}>
       <div style={{direction: "ltr", fontFamily:"vin", fontSize:25}}>
@@ -33,7 +33,7 @@ const Page: PageEl = (props, state, refresh, getProps) => {
       
         <f-cse>
         <f-cc style={{height:80, width: 250, backgroundColor:"white" ,borderRadius: 15}} >
-            <img src= "https://irmapserver.ir/research/51/temp2.webp"
+            <img src= "https://cdn.ituring.ir/research/51/temp2.webp"
               style={{height: 30, objectFit: "contain" }}/>
               <sp-3/>
           <f-cc>
@@ -47,7 +47,7 @@ const Page: PageEl = (props, state, refresh, getProps) => {
 
 
           <f-cc style={{height:80, width: 250, backgroundColor:"white" ,borderRadius: 15}} >
-            <img src= "https://irmapserver.ir/research/51/temp3.webp"
+            <img src= "https://cdn.ituring.ir/research/51/temp3.webp"
               style={{height: 30, objectFit: "contain" }}/>
               <sp-3/>
           <f-cc>
@@ -89,7 +89,7 @@ export async function getServerSideProps(context) {
     usedquota, quota, quotaunit, status, regdate, expid,
     role, path, devmod, userip, } = session;
 
-    let data =  await (await fetch("http://irmapserver.ir/research/api/weather")).json()
+    let data =  await (await fetch("http://cdn.ituring.ir/research/api/weather")).json()
     
     let feelslikec = data.current_condition[0].FeelsLikeC
     let humidity = data.current_condition[0].humidity
